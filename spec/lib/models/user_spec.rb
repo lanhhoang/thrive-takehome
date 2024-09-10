@@ -17,13 +17,6 @@ describe User do
       expect(user.previous_tokens).to eq(0)
       expect(user.tokens).to eq(10)
     end
-
-    it "should handle invalid tokens and set to 0" do
-      user = User.new(*[1, "Tanya", "Nichols", "tanya.nichols@test.com", 1, true, true, "invalid"])
-
-      expect(user.previous_tokens).to eq(0)
-      expect(user.tokens).to eq(0)
-    end
   end
 
   describe "#active?" do

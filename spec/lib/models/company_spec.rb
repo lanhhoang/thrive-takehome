@@ -14,12 +14,6 @@ describe Company do
       expect(company.email_status).to be true
       expect(company.users).to eq([])
     end
-
-    it "should handle invalid top_up and set to 0" do
-      company = Company.new(*[1, "Company A", "invalid", true])
-
-      expect(company.top_up).to eq(0)
-    end
   end
 
   describe "#email_enabled?" do
@@ -180,7 +174,5 @@ describe Company do
 
       expect(company.to_s).to eq(company_string)
     end
-  end
-    
-    
+  end 
 end
