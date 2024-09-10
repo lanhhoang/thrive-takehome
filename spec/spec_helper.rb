@@ -44,6 +44,10 @@ RSpec.configure do |config|
   # triggering implicit auto-inclusion in groups with matching metadata.
   config.shared_context_metadata_behavior = :apply_to_host_groups
 
+  # Suppress stdout in tests
+  config.before { allow($stdout).to receive(:write) }
+  config.after { allow($stdout).to receive(:write).and_call_original }
+
 # The settings below are suggested to provide a good initial experience
 # with RSpec, but feel free to customize to your heart's content.
 =begin
