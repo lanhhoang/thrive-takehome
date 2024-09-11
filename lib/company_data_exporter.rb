@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module OutputWriter
+module CompanyDataExporter
   module_function
 
   def assign_users_to_company(users, companies)
