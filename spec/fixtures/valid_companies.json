@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Company A",
+    "top_up": 5,
+    "email_status": true
+  },
+  {
+    "id": 2,
+    "name": "Company B",
+    "top_up": 15,
+    "email_status": false
+  }
+]

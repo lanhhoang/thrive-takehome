@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "first_name": "Tanya",
+    "last_name": "Nichols",
+    "email": "tanya.nichols@test.com",
+    "company_id": 1,
+    "email_status": true,
+    "active_status": false,
+    "tokens": 10
+  },
+  {
+    "id": 2,
+    "first_name": "Brent",
+    "last_name": "Rodriquez",
+    "email": "brent.rodriquez@test.com",
+    "company_id": 1,
+    "email_status": false,
+    "active_status": true,
+    "tokens": 20
+  }
+]
