@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative "../lib/output_writer"
+require_relative "../lib/company_data_exporter"
 require_relative "../lib/models/user"
 require_relative "../lib/models/company"
 
-describe OutputWriter do
+describe CompanyDataExporter do
   describe ".assign_users_to_company" do
     let(:company) { Company.new(1, "Company A", 10, true) }
     let(:user1) { User.new(1, "Tanya", "Nichols", "tanya.nichols@test.com", 1, true, true, 10) }
