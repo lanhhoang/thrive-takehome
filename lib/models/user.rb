@@ -1,10 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "../parsable"
-
 class User
-  include Parsable
-
   attr_reader :id, :first_name, :last_name, :email, :company_id, :active_status, :email_status
   attr_accessor :previous_tokens, :tokens
 
@@ -17,7 +13,7 @@ class User
     @active_status = active_status
     @email_status = email_status
     @previous_tokens = 0
-    @tokens = parse_int(tokens)
+    @tokens = tokens
   end
 
   def active?

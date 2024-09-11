@@ -1,17 +1,13 @@
 # frozen_string_literal: true
 
-require_relative "../parsable"
-
 class Company
-  include Parsable
-
   attr_reader :id, :name, :top_up, :email_status
   attr_accessor :users
 
   def initialize(id, name, top_up, email_status)
     @id = id
     @name = name
-    @top_up = parse_int(top_up)
+    @top_up = top_up
     @email_status = email_status
     @users = []
   end
