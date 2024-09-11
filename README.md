@@ -18,7 +18,7 @@
 
 ## Prerequisites
 
-- Install Ruby version `3.3.5`
+- I used Ruby version `3.3.5`, and I also tested the code with Ruby version `3.3.1`. If you cannot run the code with the current version of Ruby on your machine, please use Ruby version manager like `asdf`, `rbenv`, etc. to install the version defined in this repository.
 
 ## Code
 
